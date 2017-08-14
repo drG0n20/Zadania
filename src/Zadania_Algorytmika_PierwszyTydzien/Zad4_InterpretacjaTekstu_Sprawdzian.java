@@ -20,8 +20,6 @@ public class Zad4_InterpretacjaTekstu_Sprawdzian extends AbstractAlgorithm {
         if (!(KubaAnswers.length() == ZenekAnswers.length()) &&
                 !(KubaAnswers.length() == BogdanAnswers.length())) {
             System.out.println("Długości odpowiedzi się nie zgadzają!");
-//            if ((KubaAnswers.length(),ZenekAnswers.length()),BogdanAnswers.length() > 20 )
-//            System.out.println("Za dlugie, kurde!");
             return;
         }
 

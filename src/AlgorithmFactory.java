@@ -63,11 +63,8 @@ public class AlgorithmFactory {
 //                return new Stos();
 //            case "onp":
 //                return new ONP();
-
 //            case "testoweanie_one_way_list":
 //                return new TestowanieOneWayList();
-//            case "onp_zadanie5":
-//                return new ONP_zadanie5();
             case "rekurencja":
                 return new Zad1_Rekurencja_NwD();
             case "tablicedwuwymiarowe_warcaby":
@@ -86,6 +83,8 @@ public class AlgorithmFactory {
 //                return new Zad3_WlasnaLista();
             case "stos_array_list":
                 return new Zad4_Stos_ArrayList();
+            case "onp_zadanie5":
+                return new Zad5_Stos_Pseudokod();
             default:
 
                 throw new Exception("Nie ma takiego algorytmu!");
