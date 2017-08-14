@@ -21,17 +21,19 @@ public class Zad4_Stos_ArrayList extends AbstractAlgorithm {
         for (int i = 1; i < input.length; i++) {
             lista.add(Integer.parseInt(input[i]));
         }
-        System.out.println("\nLiczby z listy to: ");
-        for (Integer i : lista) {
-            System.out.printf("%d ", i);
-        }
+//        pomocnicze drukowanko do sprawdzenia
+//        System.out.println("\nLiczby z listy to: ");
+//        for (Integer i : lista) {
+//            System.out.printf("%d ", i);
+//        }
 
         Stack<Integer> stos = new Stack<>();
         for (Integer liczby : lista) {
             stos.push(liczby);
         }
-        System.out.println("\nLiczby ze stosu to: ");
-        System.out.printf("%s: ", stos+"\n");
+//        tutaj to samo
+//        System.out.println("\nLiczby ze stosu to: ");
+//        System.out.printf("%s: ", stos+"\n");
 
         ArrayList<Integer> reverseInput = new ArrayList<>();
 
