@@ -1,5 +1,6 @@
 import Algorithms.*;
 import Zadania_Algorytmika_PierwszyTydzien.*;
+import Zadania_Domowe.Zad1_Palindrom;
 import Zadania_StrukturyDanych.*;
 
 public class AlgorithmFactory {
@@ -37,8 +38,6 @@ public class AlgorithmFactory {
 //                return new AlgorytmKzryzowka();
 //            case "najwiekszywspolnydzielnik":
 //                return new NajwiekszyWspolnyDzielnik();
-////            case "palindrom":
-////                return new Palindrom();
 //            case "wielkanoc":
 //                return new Wielkanoc();
 //            case "zadaniapraktyczne":
@@ -85,6 +84,8 @@ public class AlgorithmFactory {
                 return new Zad4_Stos_ArrayList();
             case "onp_zadanie5":
                 return new Zad5_Stos_Pseudokod();
+            case "palindrom":
+                return new Zad1_Palindrom();
             default:
 
                 throw new Exception("Nie ma takiego algorytmu!");
