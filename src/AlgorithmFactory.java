@@ -1,7 +1,12 @@
-import Algorithms.*;
+import Algorithms.AbstractAlgorithm;
 import Zadania_Algorytmika_PierwszyTydzien.*;
 import Zadania_Domowe.Zad1_Palindrom;
-import Zadania_StrukturyDanych.*;
+import Zadania_Domowe.Zad2_Flamaster;
+import Zadania_Domowe.Zad3_Obzartuchy;
+import Zadania_StrukturyDanych.Zad1_Zmienne_i_Tablice;
+import Zadania_StrukturyDanych.Zad2_ArrayList;
+import Zadania_StrukturyDanych.Zad4_Stos_ArrayList;
+import Zadania_StrukturyDanych.Zad5_Stos_Pseudokod;
 
 public class AlgorithmFactory {
     public AbstractAlgorithm getAlgorithm(String name) throws Exception {
@@ -86,8 +91,11 @@ public class AlgorithmFactory {
                 return new Zad5_Stos_Pseudokod();
             case "palindrom":
                 return new Zad1_Palindrom();
+            case "flamaster":
+                return new Zad2_Flamaster();
+            case "obzartuchy":
+                return new Zad3_Obzartuchy();
             default:
-
                 throw new Exception("Nie ma takiego algorytmu!");
         }
     }

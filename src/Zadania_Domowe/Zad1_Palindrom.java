@@ -25,6 +25,7 @@ public class Zad1_Palindrom extends AbstractAlgorithm {
         }
         return reverse;
     }
+
     //sprawdzenie czy liczba jest palinromem
     private boolean checkIfPalindrome(int liczba) {
         int reverse = reversedPalindrome(liczba);
@@ -34,6 +35,7 @@ public class Zad1_Palindrom extends AbstractAlgorithm {
             return false;
         }
     }
+
     //dodawanie liczby do jej odwrotnosci
     private int addPalindrome(int liczba) {
         int counter = 1;
