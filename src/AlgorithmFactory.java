@@ -1,9 +1,9 @@
 import Algorithms.*;
-import Struktury.Kopiec;
 import Zadania_Algorytmika_PierwszyTydzien.*;
 import Zadania_Domowe.Zad1_Palindrom;
 import Zadania_Domowe.Zad2_Flamaster;
 import Zadania_Domowe.Zad4_NowaDzialka;
+import Zadania_Domowe.Zad6_Samolot;
 import Zadania_StrukturyDanych.Zad1_Zmienne_i_Tablice;
 import Zadania_StrukturyDanych.Zad2_ArrayList;
 import Zadania_StrukturyDanych.Zad4_Stos_ArrayList;
@@ -55,8 +55,8 @@ public class AlgorithmFactory {
 //                return new ListaDoTestow();
             case "prostedrzewo":
                 return new ProsteDrzewo();
-            case "kopiec":
-                return new Kopiec();
+//            case "kopiec":
+//                return new Kopiec();
             case "testowaniekopca":
                 return new TestowanieKopca();
             case "testowaniekopca2":
@@ -97,6 +97,8 @@ public class AlgorithmFactory {
                 return new Zad4_NowaDzialka();
 //            case "zliczaczliter":
 //                return new Zad5_ZliczaczLiter();
+            case "samolot":
+                return new Zad6_Samolot();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
