@@ -16,11 +16,11 @@ public class Zad6_Samolot extends AbstractAlgorithm {
         int n2 = Integer.parseInt(input[3]); //miejsca siedzace w kl. biznes
         int k2 = Integer.parseInt(input[4]); //miejsca w kl. eko
         int wynik = 0;
-        int i = 0;
+        int counter = 0;
 
-        while (i <= wynik) {
+        while (counter == 0) {
             wynik = (n1 * k1) + (n2 * k2);
-            break;
+            counter++;
         }
         System.out.println(wynik);
     }
