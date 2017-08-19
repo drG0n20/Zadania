@@ -1,13 +1,8 @@
 import Algorithms.*;
 import Zadania_Algorytmika_PierwszyTydzien.*;
-import Zadania_Domowe.Zad1_Palindrom;
-import Zadania_Domowe.Zad2_Flamaster;
-import Zadania_Domowe.Zad4_NowaDzialka;
-import Zadania_Domowe.Zad6_Samolot;
-import Zadania_StrukturyDanych.Zad1_Zmienne_i_Tablice;
-import Zadania_StrukturyDanych.Zad2_ArrayList;
-import Zadania_StrukturyDanych.Zad4_Stos_ArrayList;
-import Zadania_StrukturyDanych.Zad5_Stos_Pseudokod;
+import Zadania_Domowe.*;
+import Zadania_StrukturyDanych.*;
+
 
 
 public class AlgorithmFactory {
@@ -99,6 +94,8 @@ public class AlgorithmFactory {
 //                return new Zad5_ZliczaczLiter();
             case "samolot":
                 return new Zad6_Samolot();
+            case "kabalistyczny_zapis_daty":
+                return new Zad7_KabalistycznyZapisDaty();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
