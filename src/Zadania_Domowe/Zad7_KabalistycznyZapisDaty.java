@@ -15,7 +15,7 @@ public class Zad7_KabalistycznyZapisDaty extends AbstractAlgorithm {
     public void runAlgorithm(String[] input) {
 //  tworzymy hashMape
         HashMap<String, Integer> hashMap = new HashMap<>();
-//  dodajemy literki do hashmapy:
+        HashMap<String, Integer> hashMapaDoPorownania = new HashMap<>();
         hashMap.put("a", 1);
         hashMap.put("b", 2);
         hashMap.put("c", 3);
@@ -40,27 +40,28 @@ public class Zad7_KabalistycznyZapisDaty extends AbstractAlgorithm {
         hashMap.put("y", 400);
         hashMap.put("z", 500);
 
-        String wyraz;
-
         Scanner scanner = new Scanner(System.in);
-
+        String wyraz;
         //pobieranie wyrazu od uzytkownika:
         System.out.println("\nAby obliczyc date wpisz wyraz:\n(dlugosc do 25 malych liter!)\n");
         wyraz = scanner.nextLine();
-
+//rozbijam wyraz na pojedyncze literki i dodaje do hashMapaDoPorownania
         for (int i = 0; i < wyraz.length(); i++) {
-            int intA = wyraz.indexOf(' ');
-            String strA = wyraz.substring(i, i + 1);
-            System.out.println(strA);
+            int intChar = wyraz.indexOf(' ');
+            String strChar = wyraz.substring(i, i + 1);
+            for (int j = 0; j < wyraz.length(); j++) {
+                hashMapaDoPorownania.put(strChar, i);
+            }
+            for (int k = 0; k < wyraz.length(); k++) {
+                hashMap.equals(hashMapaDoPorownania);
+            }
         }
-        /**
-         *
-         *  C.D.N...
-         *
-         */
-
-//        System.out.println("\nTwoj wyraz to: " + wyraz);
+//        System.out.println(hashMapaDoPorownania);
+//        System.out.println("*********");
+//        System.out.print(hashMap);
+        System.out.println("\nTwoj wyraz to: " + wyraz);
     }
+
     private void tooLong() {
         String wyraz = "";
         if (wyraz.length() > 25) {
